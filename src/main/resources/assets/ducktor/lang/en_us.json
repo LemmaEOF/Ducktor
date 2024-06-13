@@ -1,10 +1,10 @@
 {
-	"effect.ducktor.rejuvination": "Rejuvination",
+	"effect.ducktor.rejuvenation": "Rejuvenation",
 	"item.ducktor.lozenge": "Lozenge",
 	"item.minecraft.potion.effect.magnificent": "Magnificent Potion",
 	"item.minecraft.splash_potion.effect.magnificent": "Splash Magnificent Potion",
 	"item.minecraft.lingering_potion.effect.magnificent": "Lingering Magnificent Potion",
-	"item.minecraft.potion.effect.rejuvination": "Potion of Rejuvination",
-	"item.minecraft.splash_potion.effect.rejuvination": "Splash Potion of Rejuvination",
-	"item.minecraft.lingering_potion.effect.rejuvination": "Lingering Potion of Rejuvination"
+	"item.minecraft.potion.effect.rejuvenation": "Potion of Rejuvenation",
+	"item.minecraft.splash_potion.effect.rejuvenation": "Splash Potion of Rejuvenation",
+	"item.minecraft.lingering_potion.effect.rejuvenation": "Lingering Potion of Rejuvenation"
 }

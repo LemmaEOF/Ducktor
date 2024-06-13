@@ -24,9 +24,9 @@ public class Ducktor implements ModInitializer {
 	public static final String MODID = "ducktor";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
 
-	public static final RegistryEntry<StatusEffect> REJUVINATION = Registry.registerReference(
+	public static final RegistryEntry<StatusEffect> REJUVENATION = Registry.registerReference(
 			Registries.STATUS_EFFECT,
-			Identifier.of(MODID, "rejuvination"),
+			Identifier.of(MODID, "rejuvenation"),
 			new DucktorStatusEffect(StatusEffectCategory.BENEFICIAL, 0xC26D91)
 	);
 
@@ -36,20 +36,20 @@ public class Ducktor implements ModInitializer {
 			new Potion()
 	);
 
-	public static final RegistryEntry<Potion> REJUVINATION_POTION = Registry.registerReference(
+	public static final RegistryEntry<Potion> REJUVENATION_POTION = Registry.registerReference(
 			Registries.POTION,
-			Identifier.of(MODID, "rejuvination"),
-			new Potion("rejuvination", new StatusEffectInstance(REJUVINATION, 900))
+			Identifier.of(MODID, "rejuvenation"),
+			new Potion("rejuvenation", new StatusEffectInstance(REJUVENATION, 900))
 	);
-	public static final RegistryEntry<Potion> LONG_REJUVINATION_POTION = Registry.registerReference(
+	public static final RegistryEntry<Potion> LONG_REJUVENATION_POTION = Registry.registerReference(
 			Registries.POTION,
-			Identifier.of(MODID, "long_rejuvination"),
-			new Potion("rejuvination", new StatusEffectInstance(REJUVINATION, 1800))
+			Identifier.of(MODID, "long_rejuvenation"),
+			new Potion("rejuvenation", new StatusEffectInstance(REJUVENATION, 1800))
 	);
-	public static final RegistryEntry<Potion> STRONG_REJUVINATION_POTION = Registry.registerReference(
+	public static final RegistryEntry<Potion> STRONG_REJUVENATION_POTION = Registry.registerReference(
 			Registries.POTION,
-			Identifier.of(MODID, "strong_rejuvination"),
-			new Potion("rejuvination", new StatusEffectInstance(REJUVINATION, 450, 1))
+			Identifier.of(MODID, "strong_rejuvenation"),
+			new Potion("rejuvenation", new StatusEffectInstance(REJUVENATION, 450, 1))
 	);
 
 	public static final Item LOZENGE = Registry.register(
@@ -59,7 +59,7 @@ public class Ducktor implements ModInitializer {
 					.nutrition(2)
 					.saturationModifier(0.1F)
 					.alwaysEdible()
-					.statusEffect(new StatusEffectInstance(REJUVINATION, 450), 1f)
+					.statusEffect(new StatusEffectInstance(REJUVENATION, 450), 1f)
 					.build()
 			))
 	);
@@ -68,9 +68,9 @@ public class Ducktor implements ModInitializer {
 	public void onInitialize() {
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
 			builder.registerPotionRecipe(Potions.WATER, Items.WARPED_FUNGUS, MAGNIFICENT_POTION);
-			builder.registerPotionRecipe(MAGNIFICENT_POTION, Items.SWEET_BERRIES, REJUVINATION_POTION);
-			builder.registerPotionRecipe(REJUVINATION_POTION, Items.REDSTONE, LONG_REJUVINATION_POTION);
-			builder.registerPotionRecipe(REJUVINATION_POTION, Items.GLOWSTONE_DUST, STRONG_REJUVINATION_POTION);
+			builder.registerPotionRecipe(MAGNIFICENT_POTION, Items.SWEET_BERRIES, REJUVENATION_POTION);
+			builder.registerPotionRecipe(REJUVENATION_POTION, Items.REDSTONE, LONG_REJUVENATION_POTION);
+			builder.registerPotionRecipe(REJUVENATION_POTION, Items.GLOWSTONE_DUST, STRONG_REJUVENATION_POTION);
 		});
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> entries.addAfter(Items.HONEY_BOTTLE, LOZENGE));
 	}
