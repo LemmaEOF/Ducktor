@@ -1,9 +1,9 @@
 {
   "required": true,
   "package": "gay.lemmaeof.ducktor.mixin",
-  "compatibilityLevel": "JAVA_8",
+  "compatibilityLevel": "JAVA_21",
   "mixins": [
-
+    "MixinLivingEntity"
   ],
   "client": [
     "MixinInGameHud"
