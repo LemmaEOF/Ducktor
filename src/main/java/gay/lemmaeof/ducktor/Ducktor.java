@@ -39,17 +39,17 @@ public class Ducktor implements ModInitializer {
 	public static final RegistryEntry<Potion> REJUVENATION_POTION = Registry.registerReference(
 			Registries.POTION,
 			Identifier.of(MODID, "rejuvenation"),
-			new Potion("rejuvenation", new StatusEffectInstance(REJUVENATION, 900))
+			new Potion("rejuvenation", new StatusEffectInstance(REJUVENATION, 1800, 1))
 	);
 	public static final RegistryEntry<Potion> LONG_REJUVENATION_POTION = Registry.registerReference(
 			Registries.POTION,
 			Identifier.of(MODID, "long_rejuvenation"),
-			new Potion("rejuvenation", new StatusEffectInstance(REJUVENATION, 1800))
+			new Potion("rejuvenation", new StatusEffectInstance(REJUVENATION, 3600, 1))
 	);
 	public static final RegistryEntry<Potion> STRONG_REJUVENATION_POTION = Registry.registerReference(
 			Registries.POTION,
 			Identifier.of(MODID, "strong_rejuvenation"),
-			new Potion("rejuvenation", new StatusEffectInstance(REJUVENATION, 450, 1))
+			new Potion("rejuvenation", new StatusEffectInstance(REJUVENATION, 900, 2))
 	);
 
 	public static final Item LOZENGE = Registry.register(

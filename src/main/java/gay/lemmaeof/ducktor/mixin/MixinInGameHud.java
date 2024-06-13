@@ -17,7 +17,7 @@ public class MixinInGameHud {
 
 	@ModifyExpressionValue(method = "renderStatusBars", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/player/PlayerEntity;hasStatusEffect(Lnet/minecraft/registry/entry/RegistryEntry;)Z"))
 	private boolean injectRejuvinationEffect(boolean original) {
-		if (getCameraPlayer().hasStatusEffect(Ducktor.REJUVINATION)) {
+		if (getCameraPlayer().hasStatusEffect(Ducktor.REJUVENATION)) {
 			return true;
 		}
 		return original;
