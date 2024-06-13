@@ -1,11 +1,11 @@
 <img src="icon.png" align="right" width="180px"/>
 
-# Fabric Starter
+# Ducktor
 
 
-[>> Downloads <<](https://github.com/CottonMC/FabricStarter/releases)
+[>> Downloads <<](https://github.com/LemmaEOF/Ducktor/releases)
 
-*Get set up!*
+*It cures what ails ya!*
 
 **This mod is open source and under a permissive license.** As such, it can be included in any modpack on any platform without prior permission. We appreciate hearing about people using our mods, but you do not need to ask to use them. See the [LICENSE file](LICENSE) for more details.
 

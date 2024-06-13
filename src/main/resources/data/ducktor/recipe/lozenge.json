@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" # ",
+		"$I$",
+		" $ "
+	],
+	"key": {
+		"#": {
+			"item": "minecraft:honey_bottle"
+		},
+		"$": {
+			"item": "minecraft:sugar"
+		},
+		"I": {
+			"item": "minecraft:sweet_berries"
+		}
+	},
+	"result": {
+		"id": "ducktor:lozenge"
+	}
+}

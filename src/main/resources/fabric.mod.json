@@ -1,33 +1,30 @@
 {
 	"schemaVersion": 1,
-	"id": "starter",
+	"id": "ducktor",
 	"version": "${version}",
-	"name": "Fabric Starter",
-	"description": "Template for starting out Fabric mods",
+	"name": "Ducktor",
+	"description": "Quack medicine created for ModFest: Carnival",
 	"authors": [
-		"Me!"
+		"Dr. Lem Wellingston"
 	],
 	"contact": {
-		"sources": "https://github.com/CottonMC/FabricStarter"
+		"sources": "https://github.com/LemmaEOF/Ductor"
 	},
-	"license": "MIT",
-	"icon": "assets/starter/icon.png",
+	"license": "BSD-3",
+	"icon": "assets/ducktor/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"io.github.cottonmc.starter.FabricStarter"
+			"gay.lemmaeof.ducktor.Ducktor"
 		]
 	},
 	"mixins": [
-		"mixins.starter.json"
+		"mixins.ducktor.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.9",
-		"minecraft": "~1.20.4",
+		"minecraft": ">=1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
