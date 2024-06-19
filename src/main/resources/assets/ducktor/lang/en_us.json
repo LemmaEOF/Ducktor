@@ -1,10 +1,12 @@
 {
+	"block.ducktor.scented_candle": "Scented Candle",
+	"block.ducktor.warding_candle": "Warding Candle",
 	"effect.ducktor.rejuvenation": "Rejuvenation",
 	"item.ducktor.lozenge": "Lozenge",
 	"item.minecraft.potion.effect.magnificent": "Magnificent Potion",
 	"item.minecraft.splash_potion.effect.magnificent": "Splash Magnificent Potion",
 	"item.minecraft.lingering_potion.effect.magnificent": "Lingering Magnificent Potion",
-	"item.minecraft.potion.effect.rejuvenation": "Potion of Rejuvenation",
-	"item.minecraft.splash_potion.effect.rejuvenation": "Splash Potion of Rejuvenation",
-	"item.minecraft.lingering_potion.effect.rejuvenation": "Lingering Potion of Rejuvenation"
+	"item.minecraft.potion.effect.rejuvenation": "Dr. Lem Wellington's Magnificent Cure-All Concoction",
+	"item.minecraft.splash_potion.effect.rejuvenation": "Splash Cure-All Concoction",
+	"item.minecraft.lingering_potion.effect.rejuvenation": "Lingering Cure-All Concoction"
 }

@@ -72,7 +72,21 @@ public class Ducktor implements ModInitializer {
 			Registries.BLOCK,
 			Identifier.of(MODID, "scented_candle"),
 			new ScentedCandleBlock(AbstractBlock.Settings.create()
-					.mapColor(MapColor.PALE_YELLOW)
+					.mapColor(MapColor.PALE_PURPLE)
+					.nonOpaque()
+					.strength(0.1F)
+					.sounds(BlockSoundGroup.CANDLE)
+					.luminance(ScentedCandleBlock.STATE_TO_LUMINANCE)
+					.pistonBehavior(PistonBehavior.DESTROY)
+					.ticksRandomly()
+			)
+	);
+
+	public static final WardingCandleBlock WARDING_CANDLE = Registry.register(
+			Registries.BLOCK,
+			Identifier.of(MODID, "warding_candle"),
+			new WardingCandleBlock(AbstractBlock.Settings.create()
+					.mapColor(MapColor.BRIGHT_RED)
 					.nonOpaque()
 					.strength(0.1F)
 					.sounds(BlockSoundGroup.CANDLE)
@@ -91,7 +105,8 @@ public class Ducktor implements ModInitializer {
 			builder.registerPotionRecipe(REJUVENATION_POTION, Items.GLOWSTONE_DUST, STRONG_REJUVENATION_POTION);
 		});
 		Registry.register(Registries.ITEM, Identifier.of(MODID, "scented_candle"), new BlockItem(SCENTED_CANDLE, new Item.Settings()));
+		Registry.register(Registries.ITEM, Identifier.of(MODID, "warding_candle"), new BlockItem(WARDING_CANDLE, new Item.Settings()));
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> entries.addAfter(Items.HONEY_BOTTLE, LOZENGE));
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> entries.add(SCENTED_CANDLE));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> entries.addAfter(Items.PINK_CANDLE, SCENTED_CANDLE, WARDING_CANDLE));
 	}
 }
